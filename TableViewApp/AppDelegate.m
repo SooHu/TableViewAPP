@@ -17,6 +17,20 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //改变状态栏风格,需要在项目info中配置View controller-based status bar appearance为NO
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
+    //设置导航栏背景颜色
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:231.0/255.0 green:95.0/255.0 blue:53.0/255.0 alpha:0.3]];
+    //设置导航栏返回颜色
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    //设置导航栏标题颜色和字体
+    [[UINavigationBar appearance] setTitleTextAttributes:
+                @{NSFontAttributeName:[UIFont fontWithName:@"AvenirNextCondensed-DemiBold" size:20],
+                            NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    //设置到toolbar颜色和以及barbutton颜色
+    [[UIBarButtonItem appearance] setTintColor:[UIColor colorWithRed:235.0/255.0 green:73.0/255.0 blue:27.0/255.0 alpha:1.0]];
+    [[UIToolbar appearance] setBarTintColor:[UIColor colorWithRed:237.0/255.0 green:240.0/255.0 blue:243.0/255.0 alpha:0.5]];
     return YES;
 }
 

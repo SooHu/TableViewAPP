@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD0EFC731B26D1420054E90C /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0EFC721B26D1420054E90C /* HomeTableViewController.m */; };
+		CD0EFC761B26D6660054E90C /* addTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0EFC751B26D6660054E90C /* addTableViewController.m */; };
+		CD0EFC791B26EB860054E90C /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0EFC781B26EB860054E90C /* HomeTableViewCell.m */; };
+		CD0EFC7C1B26FD7E0054E90C /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0EFC7B1B26FD7E0054E90C /* Item.m */; };
+		CD0EFC7F1B26FF420054E90C /* ItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0EFC7E1B26FF420054E90C /* ItemStore.m */; };
+		CD0EFC821B270A730054E90C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0EFC811B270A730054E90C /* DetailViewController.m */; };
+		CD0EFC851B270D970054E90C /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0EFC841B270D970054E90C /* DetailTableViewCell.m */; };
+		CD0EFC881B2732590054E90C /* ReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0EFC871B2732590054E90C /* ReviewViewController.m */; };
+		CD0EFC8A1B27B97C0054E90C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0EFC891B27B97C0054E90C /* MapKit.framework */; };
 		CDC2C5D41B2033ED00AD5686 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC2C5D31B2033ED00AD5686 /* main.m */; };
 		CDC2C5D71B2033ED00AD5686 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC2C5D61B2033ED00AD5686 /* AppDelegate.m */; };
-		CDC2C5DA1B2033ED00AD5686 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC2C5D91B2033ED00AD5686 /* ViewController.m */; };
 		CDC2C5DD1B2033ED00AD5686 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC2C5DB1B2033ED00AD5686 /* Main.storyboard */; };
 		CDC2C5DF1B2033ED00AD5686 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDC2C5DE1B2033ED00AD5686 /* Images.xcassets */; };
 		CDC2C5E21B2033ED00AD5686 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDC2C5E01B2033ED00AD5686 /* LaunchScreen.xib */; };
@@ -27,13 +35,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD0EFC711B26D1420054E90C /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
+		CD0EFC721B26D1420054E90C /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
+		CD0EFC741B26D6660054E90C /* addTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addTableViewController.h; sourceTree = "<group>"; };
+		CD0EFC751B26D6660054E90C /* addTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addTableViewController.m; sourceTree = "<group>"; };
+		CD0EFC771B26EB860054E90C /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		CD0EFC781B26EB860054E90C /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		CD0EFC7A1B26FD7E0054E90C /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		CD0EFC7B1B26FD7E0054E90C /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		CD0EFC7D1B26FF420054E90C /* ItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemStore.h; sourceTree = "<group>"; };
+		CD0EFC7E1B26FF420054E90C /* ItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemStore.m; sourceTree = "<group>"; };
+		CD0EFC801B270A730054E90C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		CD0EFC811B270A730054E90C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		CD0EFC831B270D970054E90C /* DetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
+		CD0EFC841B270D970054E90C /* DetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
+		CD0EFC861B2732590054E90C /* ReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewViewController.h; sourceTree = "<group>"; };
+		CD0EFC871B2732590054E90C /* ReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewViewController.m; sourceTree = "<group>"; };
+		CD0EFC891B27B97C0054E90C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		CDC2C5CE1B2033ED00AD5686 /* TableViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC2C5D21B2033ED00AD5686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDC2C5D31B2033ED00AD5686 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CDC2C5D51B2033ED00AD5686 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CDC2C5D61B2033ED00AD5686 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CDC2C5D81B2033ED00AD5686 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CDC2C5D91B2033ED00AD5686 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CDC2C5DC1B2033ED00AD5686 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDC2C5DE1B2033ED00AD5686 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CDC2C5E11B2033ED00AD5686 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -47,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD0EFC8A1B27B97C0054E90C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +87,7 @@
 		CDC2C5C51B2033ED00AD5686 = {
 			isa = PBXGroup;
 			children = (
+				CD0EFC891B27B97C0054E90C /* MapKit.framework */,
 				CDC2C5D01B2033ED00AD5686 /* TableViewApp */,
 				CDC2C5EA1B2033ED00AD5686 /* TableViewAppTests */,
 				CDC2C5CF1B2033ED00AD5686 /* Products */,
@@ -81,11 +106,25 @@
 		CDC2C5D01B2033ED00AD5686 /* TableViewApp */ = {
 			isa = PBXGroup;
 			children = (
+				CDC2C5DB1B2033ED00AD5686 /* Main.storyboard */,
+				CD0EFC7A1B26FD7E0054E90C /* Item.h */,
+				CD0EFC7B1B26FD7E0054E90C /* Item.m */,
+				CD0EFC7D1B26FF420054E90C /* ItemStore.h */,
+				CD0EFC7E1B26FF420054E90C /* ItemStore.m */,
 				CDC2C5D51B2033ED00AD5686 /* AppDelegate.h */,
 				CDC2C5D61B2033ED00AD5686 /* AppDelegate.m */,
-				CDC2C5D81B2033ED00AD5686 /* ViewController.h */,
-				CDC2C5D91B2033ED00AD5686 /* ViewController.m */,
-				CDC2C5DB1B2033ED00AD5686 /* Main.storyboard */,
+				CD0EFC771B26EB860054E90C /* HomeTableViewCell.h */,
+				CD0EFC781B26EB860054E90C /* HomeTableViewCell.m */,
+				CD0EFC831B270D970054E90C /* DetailTableViewCell.h */,
+				CD0EFC841B270D970054E90C /* DetailTableViewCell.m */,
+				CD0EFC711B26D1420054E90C /* HomeTableViewController.h */,
+				CD0EFC721B26D1420054E90C /* HomeTableViewController.m */,
+				CD0EFC741B26D6660054E90C /* addTableViewController.h */,
+				CD0EFC751B26D6660054E90C /* addTableViewController.m */,
+				CD0EFC801B270A730054E90C /* DetailViewController.h */,
+				CD0EFC811B270A730054E90C /* DetailViewController.m */,
+				CD0EFC861B2732590054E90C /* ReviewViewController.h */,
+				CD0EFC871B2732590054E90C /* ReviewViewController.m */,
 				CDC2C5DE1B2033ED00AD5686 /* Images.xcassets */,
 				CDC2C5E01B2033ED00AD5686 /* LaunchScreen.xib */,
 				CDC2C5D11B2033ED00AD5686 /* Supporting Files */,
@@ -168,6 +207,11 @@
 				TargetAttributes = {
 					CDC2C5CD1B2033ED00AD5686 = {
 						CreatedOnToolsVersion = 6.3.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					CDC2C5E61B2033ED00AD5686 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -219,9 +263,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDC2C5DA1B2033ED00AD5686 /* ViewController.m in Sources */,
+				CD0EFC881B2732590054E90C /* ReviewViewController.m in Sources */,
+				CD0EFC7C1B26FD7E0054E90C /* Item.m in Sources */,
+				CD0EFC731B26D1420054E90C /* HomeTableViewController.m in Sources */,
 				CDC2C5D71B2033ED00AD5686 /* AppDelegate.m in Sources */,
+				CD0EFC851B270D970054E90C /* DetailTableViewCell.m in Sources */,
+				CD0EFC821B270A730054E90C /* DetailViewController.m in Sources */,
+				CD0EFC7F1B26FF420054E90C /* ItemStore.m in Sources */,
+				CD0EFC791B26EB860054E90C /* HomeTableViewCell.m in Sources */,
 				CDC2C5D41B2033ED00AD5686 /* main.m in Sources */,
+				CD0EFC761B26D6660054E90C /* addTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +403,7 @@
 				INFOPLIST_FILE = TableViewApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -362,6 +414,7 @@
 				INFOPLIST_FILE = TableViewApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -418,6 +471,7 @@
 				CDC2C5F31B2033ED00AD5686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CDC2C5F41B2033ED00AD5686 /* Build configuration list for PBXNativeTarget "TableViewAppTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +480,7 @@
 				CDC2C5F61B2033ED00AD5686 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
