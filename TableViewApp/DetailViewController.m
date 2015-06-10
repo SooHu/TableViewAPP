@@ -8,9 +8,11 @@
 
 #import "DetailViewController.h"
 #import "DetailTableViewCell.h"
+#import "MapViewController.h"
 @interface DetailViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 
 @end
 
@@ -53,6 +55,7 @@
     NSString *cellIndentifier = @"detailCell";
     DetailTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIndentifier forIndexPath:indexPath];
     
+    cell.mapButton.hidden = YES;
     switch (indexPath.row) {
         case 0:
             cell.nameLabel.text = @"Name";
@@ -65,6 +68,7 @@
         case 2:
             cell.nameLabel.text = @"Location";
             cell.valueLabel.text = self.item.location;
+            cell.mapButton.hidden = NO;
             break;
         default:
             break;
@@ -74,5 +78,13 @@
 //unwind segue
 - (IBAction)close:(UIStoryboardSegue *)segue
 {
+}
+
+- (void)prepareForSegue:(nonnull UIStoryboardSegue *)segue sender:(nullable id)sender
+{
+    if ([segue.identifier isEqual:@"showMap"]) {
+        MapViewController *mvc = segue.destinationViewController;
+        mvc.item = self.item;
+    }
 }
 @end

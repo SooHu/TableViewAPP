@@ -16,6 +16,11 @@
 		CD0EFC851B270D970054E90C /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0EFC841B270D970054E90C /* DetailTableViewCell.m */; };
 		CD0EFC881B2732590054E90C /* ReviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0EFC871B2732590054E90C /* ReviewViewController.m */; };
 		CD0EFC8A1B27B97C0054E90C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0EFC891B27B97C0054E90C /* MapKit.framework */; };
+		CD0EFC8D1B27C1A70054E90C /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0EFC8C1B27C1A70054E90C /* MapViewController.m */; };
+		CD0EFC901B27D27C0054E90C /* PageContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0EFC8F1B27D27C0054E90C /* PageContentViewController.m */; };
+		CD0EFC931B27D5010054E90C /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0EFC921B27D5010054E90C /* PageViewController.m */; };
+		CD0EFC961B27ED0A0054E90C /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0EFC951B27ED0A0054E90C /* WebViewController.m */; };
+		CD0EFC991B27ED5E0054E90C /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0EFC981B27ED5E0054E90C /* AboutViewController.m */; };
 		CDC2C5D41B2033ED00AD5686 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC2C5D31B2033ED00AD5686 /* main.m */; };
 		CDC2C5D71B2033ED00AD5686 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC2C5D61B2033ED00AD5686 /* AppDelegate.m */; };
 		CDC2C5DD1B2033ED00AD5686 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC2C5DB1B2033ED00AD5686 /* Main.storyboard */; };
@@ -52,6 +57,16 @@
 		CD0EFC861B2732590054E90C /* ReviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewViewController.h; sourceTree = "<group>"; };
 		CD0EFC871B2732590054E90C /* ReviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewViewController.m; sourceTree = "<group>"; };
 		CD0EFC891B27B97C0054E90C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CD0EFC8B1B27C1A70054E90C /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		CD0EFC8C1B27C1A70054E90C /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		CD0EFC8E1B27D27C0054E90C /* PageContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageContentViewController.h; sourceTree = "<group>"; };
+		CD0EFC8F1B27D27C0054E90C /* PageContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageContentViewController.m; sourceTree = "<group>"; };
+		CD0EFC911B27D5010054E90C /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		CD0EFC921B27D5010054E90C /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		CD0EFC941B27ED0A0054E90C /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		CD0EFC951B27ED0A0054E90C /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		CD0EFC971B27ED5E0054E90C /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		CD0EFC981B27ED5E0054E90C /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		CDC2C5CE1B2033ED00AD5686 /* TableViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC2C5D21B2033ED00AD5686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDC2C5D31B2033ED00AD5686 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -125,6 +140,16 @@
 				CD0EFC811B270A730054E90C /* DetailViewController.m */,
 				CD0EFC861B2732590054E90C /* ReviewViewController.h */,
 				CD0EFC871B2732590054E90C /* ReviewViewController.m */,
+				CD0EFC8B1B27C1A70054E90C /* MapViewController.h */,
+				CD0EFC8C1B27C1A70054E90C /* MapViewController.m */,
+				CD0EFC911B27D5010054E90C /* PageViewController.h */,
+				CD0EFC921B27D5010054E90C /* PageViewController.m */,
+				CD0EFC8E1B27D27C0054E90C /* PageContentViewController.h */,
+				CD0EFC8F1B27D27C0054E90C /* PageContentViewController.m */,
+				CD0EFC971B27ED5E0054E90C /* AboutViewController.h */,
+				CD0EFC981B27ED5E0054E90C /* AboutViewController.m */,
+				CD0EFC941B27ED0A0054E90C /* WebViewController.h */,
+				CD0EFC951B27ED0A0054E90C /* WebViewController.m */,
 				CDC2C5DE1B2033ED00AD5686 /* Images.xcassets */,
 				CDC2C5E01B2033ED00AD5686 /* LaunchScreen.xib */,
 				CDC2C5D11B2033ED00AD5686 /* Supporting Files */,
@@ -264,15 +289,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD0EFC881B2732590054E90C /* ReviewViewController.m in Sources */,
+				CD0EFC961B27ED0A0054E90C /* WebViewController.m in Sources */,
 				CD0EFC7C1B26FD7E0054E90C /* Item.m in Sources */,
 				CD0EFC731B26D1420054E90C /* HomeTableViewController.m in Sources */,
 				CDC2C5D71B2033ED00AD5686 /* AppDelegate.m in Sources */,
 				CD0EFC851B270D970054E90C /* DetailTableViewCell.m in Sources */,
+				CD0EFC991B27ED5E0054E90C /* AboutViewController.m in Sources */,
+				CD0EFC901B27D27C0054E90C /* PageContentViewController.m in Sources */,
 				CD0EFC821B270A730054E90C /* DetailViewController.m in Sources */,
 				CD0EFC7F1B26FF420054E90C /* ItemStore.m in Sources */,
 				CD0EFC791B26EB860054E90C /* HomeTableViewCell.m in Sources */,
 				CDC2C5D41B2033ED00AD5686 /* main.m in Sources */,
 				CD0EFC761B26D6660054E90C /* addTableViewController.m in Sources */,
+				CD0EFC931B27D5010054E90C /* PageViewController.m in Sources */,
+				CD0EFC8D1B27C1A70054E90C /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,8 +11,9 @@
 #import "DetailViewController.h"
 #import "ItemStore.h"
 #import "Item.h"
+#import "PageViewController.h"
 @interface HomeTableViewController ()
-
+@property (nonatomic) UISearchController *searchController;
 @end
 
 @implementation HomeTableViewController
@@ -31,10 +32,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //添加搜索栏到表格视图的头部视图
+    self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+    [self.searchController.searchBar sizeToFit];
+    self.tableView.tableHeaderView = self.searchController.searchBar;
+    self.definesPresentationContext = YES;
+    
     
     //隐藏返回按钮中的文字
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     self.navigationItem.backBarButtonItem = backItem;
+    //添加引导页
+//    PageViewController *pvc = [[PageViewController alloc] init];
+//    [self presentViewController:pvc animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
