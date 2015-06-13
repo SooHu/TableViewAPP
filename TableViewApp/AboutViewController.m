@@ -8,6 +8,8 @@
 
 #import "AboutViewController.h"
 #import "WebViewController.h"
+
+
 @interface AboutViewController ()
 @property (nonatomic)NSURLSession *session;
 @end
@@ -26,6 +28,7 @@
 
 - (IBAction)contactMe:(id)sender
 {
+    
 }
 
 - (IBAction)toMyBlog:(id)sender

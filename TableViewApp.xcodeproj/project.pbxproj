@@ -21,6 +21,9 @@
 		CD0EFC931B27D5010054E90C /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0EFC921B27D5010054E90C /* PageViewController.m */; };
 		CD0EFC961B27ED0A0054E90C /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0EFC951B27ED0A0054E90C /* WebViewController.m */; };
 		CD0EFC991B27ED5E0054E90C /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD0EFC981B27ED5E0054E90C /* AboutViewController.m */; };
+		CD62E5081B2BDA2C008E6D07 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD62E5071B2BDA2C008E6D07 /* AVFoundation.framework */; };
+		CD62E54F1B2C0B57008E6D07 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD62E54E1B2C0B57008E6D07 /* AudioToolbox.framework */; };
+		CD62E5551B2C1609008E6D07 /* pop.wav in Resources */ = {isa = PBXBuildFile; fileRef = CD62E5541B2C1609008E6D07 /* pop.wav */; };
 		CDC2C5D41B2033ED00AD5686 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC2C5D31B2033ED00AD5686 /* main.m */; };
 		CDC2C5D71B2033ED00AD5686 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC2C5D61B2033ED00AD5686 /* AppDelegate.m */; };
 		CDC2C5DD1B2033ED00AD5686 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDC2C5DB1B2033ED00AD5686 /* Main.storyboard */; };
@@ -67,6 +70,9 @@
 		CD0EFC951B27ED0A0054E90C /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		CD0EFC971B27ED5E0054E90C /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		CD0EFC981B27ED5E0054E90C /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		CD62E5071B2BDA2C008E6D07 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CD62E54E1B2C0B57008E6D07 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CD62E5541B2C1609008E6D07 /* pop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = pop.wav; path = ../../../../../Downloads/pop.wav; sourceTree = "<group>"; };
 		CDC2C5CE1B2033ED00AD5686 /* TableViewApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDC2C5D21B2033ED00AD5686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDC2C5D31B2033ED00AD5686 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +91,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD62E54F1B2C0B57008E6D07 /* AudioToolbox.framework in Frameworks */,
+				CD62E5081B2BDA2C008E6D07 /* AVFoundation.framework in Frameworks */,
 				CD0EFC8A1B27B97C0054E90C /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,9 +107,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD62E5061B2BD7D8008E6D07 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = sounds;
+			sourceTree = "<group>";
+		};
 		CDC2C5C51B2033ED00AD5686 = {
 			isa = PBXGroup;
 			children = (
+				CD62E54E1B2C0B57008E6D07 /* AudioToolbox.framework */,
+				CD62E5071B2BDA2C008E6D07 /* AVFoundation.framework */,
 				CD0EFC891B27B97C0054E90C /* MapKit.framework */,
 				CDC2C5D01B2033ED00AD5686 /* TableViewApp */,
 				CDC2C5EA1B2033ED00AD5686 /* TableViewAppTests */,
@@ -152,6 +169,8 @@
 				CD0EFC951B27ED0A0054E90C /* WebViewController.m */,
 				CDC2C5DE1B2033ED00AD5686 /* Images.xcassets */,
 				CDC2C5E01B2033ED00AD5686 /* LaunchScreen.xib */,
+				CD62E5541B2C1609008E6D07 /* pop.wav */,
+				CD62E5061B2BD7D8008E6D07 /* sounds */,
 				CDC2C5D11B2033ED00AD5686 /* Supporting Files */,
 			);
 			path = TableViewApp;
@@ -269,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDC2C5DD1B2033ED00AD5686 /* Main.storyboard in Resources */,
+				CD62E5551B2C1609008E6D07 /* pop.wav in Resources */,
 				CDC2C5E21B2033ED00AD5686 /* LaunchScreen.xib in Resources */,
 				CDC2C5DF1B2033ED00AD5686 /* Images.xcassets in Resources */,
 			);

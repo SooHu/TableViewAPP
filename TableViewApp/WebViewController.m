@@ -7,8 +7,12 @@
 //
 
 #import "WebViewController.h"
-
+#import <AVFoundation/AVFoundation.h>
+#import <AudioToolbox/AudioToolbox.h>
 @interface WebViewController () <UIWebViewDelegate>
+{
+    SystemSoundID soundID;
+}
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
@@ -44,6 +48,7 @@
     if (self.webView.canGoBack) {
         [self.webView goBack];
     }
+    [self playSoundEffect:@"pop" type:@"wav"];
 }
 //前进
 - (IBAction)goForward:(id)sender
@@ -51,6 +56,7 @@
     if (self.webView.canGoForward) {
         [self.webView goForward];
     }
+    [self playSoundEffect:@"pop" type:@"wav"];
 }
 //委托方法:网页视图开始加载一个请求后得到的消息
 - (void)webViewDidStartLoad:(nonnull UIWebView *)webView
@@ -77,5 +83,15 @@
     if (self.webView.canGoBack) {
         [self.webView goBack];
     }
+}
+
+#pragma mark - 播放音效
+-(void)playSoundEffect:(NSString *)name type:(NSString *)type
+{
+    NSString *soundFilePath =[[NSBundle mainBundle] pathForResource:name ofType:type];
+    NSURL *soundURL = [NSURL fileURLWithPath:soundFilePath];
+
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)soundURL, &soundID);
+    AudioServicesPlaySystemSound(soundID);//播放系统音效
 }
 @end
