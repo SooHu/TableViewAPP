@@ -8,81 +8,74 @@
 
 #import "WebViewController.h"
 
-@interface WebViewController ()
+@interface WebViewController () <UIWebViewDelegate>
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolBar;
-
+- (void)handleSwipeLeftWithRecognizer:(UISwipeGestureRecognizer *)swipeGesture;
+- (void)handleSwipeRightWithRecognizer:(UISwipeGestureRecognizer *)swipeGesture;
 @end
 
 @implementation WebViewController
 
-//- (void)loadView
-//{
-//    self.webView.scalesPageToFit = YES;
-//    [self.view addSubview:self.webView];
-//    
-//}
-
-//- (void)setUrl:(NSURL *)url
-//{
-//    _url = url;
-//    if (_url) {
-//        [self.spinner startAnimating];
-//        [self loadWebView:_url];
-//    }
-//}
-
-//- (void)loadWebView:(NSURL *)url
-//{
-//    
-//    NSURLRequest *req = [NSURLRequest requestWithURL:_url];
-//    [self.webView loadRequest:req];
-//    if (self.webView.loading == NO) {
-//        [self.spinner stopAnimating];
-//    }
-//    
-//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.webView.bounds = self.view.bounds;
+
+    self.webView.delegate = self;//设置委托
     self.webView.scalesPageToFit = YES;
-    [self.spinner startAnimating];
-    [self.view addSubview:self.webView];
-    [self.view addSubview:self.spinner];
-    
+    [self.view addSubview:self.webView];//添加WebView为View的子视图
+
     NSURLRequest *req = [NSURLRequest requestWithURL:self.url];
-    [self.webView loadRequest:req];
-    if (self.webView.loading == NO) {
-        [self.spinner stopAnimating];
-    }
+    [self.webView loadRequest:req];//加载请求
+    
+    //添加手势操作
+    UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeLeftWithRecognizer:)];
+    UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(handleSwipeRightWithRecognizer:)];
+    swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
+    swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
+    [self.webView addGestureRecognizer:swipeLeft];
+    [self.webView addGestureRecognizer:swipeRight];
 }
 
-
-
+//返回
 - (IBAction)goBack:(id)sender
 {
     if (self.webView.canGoBack) {
         [self.webView goBack];
     }
 }
+//前进
 - (IBAction)goForward:(id)sender
 {
     if (self.webView.canGoForward) {
         [self.webView goForward];
     }
 }
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+//委托方法:网页视图开始加载一个请求后得到的消息
+- (void)webViewDidStartLoad:(nonnull UIWebView *)webView
+{
+    [self.spinner startAnimating];
+    [self.view addSubview:self.spinner];
 }
-*/
+//委托方法:网页视图结束加载一个请求后得到的消息
+- (void)webViewDidFinishLoad:(nonnull UIWebView *)webView
+{
+    [self.spinner stopAnimating];
+    //还需要在属性控制器处设置hidden when stop
+}
 
+#pragma mark - 手势操作:左滑和右滑
+- (void)handleSwipeLeftWithRecognizer:(UISwipeGestureRecognizer *)swipeGesture
+{
+    if (self.webView.canGoForward) {
+        [self.webView goForward];
+    }
+}
+- (void)handleSwipeRightWithRecognizer:(UISwipeGestureRecognizer *)swipeGesture
+{
+    if (self.webView.canGoBack) {
+        [self.webView goBack];
+    }
+}
 @end

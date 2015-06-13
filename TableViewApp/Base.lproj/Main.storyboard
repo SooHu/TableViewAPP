@@ -33,7 +33,7 @@
                                         <rect key="frame" x="0.0" y="64" width="600" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HAl-Qe-FSA" id="XJd-d0-BOk">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="199.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="OzD-1n-wLc">
@@ -307,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FFZ-qK-SbQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1282" y="1755"/>
+            <point key="canvasLocation" x="462" y="1777"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9C6-Lq-jhi">
@@ -436,7 +436,7 @@
                                         <rect key="frame" x="0.0" y="22" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oxh-NE-W7p" id="hu7-M0-FQV">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKq-6t-yTN">
@@ -607,7 +607,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GbO-Ly-rzo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-246" y="2209"/>
+            <point key="canvasLocation" x="-246" y="1777"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="ThQ-e6-TWb">
@@ -615,7 +615,7 @@
                 <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="vnu-g1-k7A" customClass="PageViewController" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aqr-wK-Wq0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2403" y="3405"/>
+            <point key="canvasLocation" x="-2277" y="213"/>
         </scene>
         <!--Page Content View Controller-->
         <scene sceneID="bYY-dc-his">
@@ -672,13 +672,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VCt-oG-9UR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1725" y="3405"/>
+            <point key="canvasLocation" x="-1565" y="213"/>
         </scene>
         <!--Feed-->
         <scene sceneID="2sP-Jf-vWL">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IdB-dq-tUI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Feed" image="message" id="FWg-zF-aha"/>
+                    <tabBarItem key="tabBarItem" title="Feed" image="Star" id="FWg-zF-aha"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lKl-7p-K3W">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -691,7 +691,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="irY-K9-N8P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1022" y="2121"/>
+            <point key="canvasLocation" x="-1058" y="1777"/>
         </scene>
         <!--About-->
         <scene sceneID="VZu-6E-Ylt">
@@ -729,7 +729,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="contactMe:" destination="5c3-QC-cpY" eventType="touchUpInside" id="QdS-83-ENr"/>
-                                    <segue destination="DBM-Rc-WsZ" kind="show" id="AMu-3Q-RPd"/>
+                                    <segue destination="DBM-Rc-WsZ" kind="show" identifier="toGithub" id="AMu-3Q-RPd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hN4-si-8Ik">
@@ -757,7 +757,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="toMyBlog:" destination="5c3-QC-cpY" eventType="touchUpInside" id="4DR-Fd-jZl"/>
-                                    <segue destination="DBM-Rc-WsZ" kind="show" id="K6U-5A-izc"/>
+                                    <segue destination="DBM-Rc-WsZ" kind="show" identifier="toBlog" id="K6U-5A-izc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -800,7 +800,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OOX-8R-QNk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-190" y="2915"/>
+            <point key="canvasLocation" x="-246" y="2663"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="Fsu-e2-uA3">
@@ -815,7 +815,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BmA-am-1cH">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="507"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="443"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11k-Mp-3gS">
@@ -834,7 +834,7 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Cmv-n8-V4C">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Cmv-n8-V4C">
                                 <rect key="frame" x="290" y="243.5" width="20" height="20"/>
                                 <color key="tintColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="color" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -843,12 +843,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="11k-Mp-3gS" firstAttribute="top" secondItem="BmA-am-1cH" secondAttribute="bottom" id="1v4-Ay-ERm"/>
-                            <constraint firstItem="Cmv-n8-V4C" firstAttribute="centerY" secondItem="BmA-am-1cH" secondAttribute="centerY" id="SJ5-QF-vvN"/>
+                            <constraint firstItem="Cmv-n8-V4C" firstAttribute="centerY" secondItem="BmA-am-1cH" secondAttribute="centerY" constant="-32" id="SJ5-QF-vvN"/>
                             <constraint firstItem="11k-Mp-3gS" firstAttribute="top" secondItem="BmA-am-1cH" secondAttribute="bottom" id="SNX-0W-5z8"/>
                             <constraint firstItem="11k-Mp-3gS" firstAttribute="leading" secondItem="b3L-5Z-mNe" secondAttribute="leading" id="YDQ-jZ-nD9"/>
                             <constraint firstItem="11k-Mp-3gS" firstAttribute="leading" secondItem="BmA-am-1cH" secondAttribute="leading" id="bdJ-an-oOL"/>
                             <constraint firstItem="Cmv-n8-V4C" firstAttribute="centerX" secondItem="11k-Mp-3gS" secondAttribute="centerX" id="eik-nE-8lW"/>
-                            <constraint firstItem="BmA-am-1cH" firstAttribute="top" secondItem="b3L-5Z-mNe" secondAttribute="top" id="fG7-qq-He5"/>
+                            <constraint firstItem="BmA-am-1cH" firstAttribute="top" secondItem="b3L-5Z-mNe" secondAttribute="top" constant="64" id="fG7-qq-He5"/>
                             <constraint firstItem="11k-Mp-3gS" firstAttribute="bottom" secondItem="AVH-lE-pVL" secondAttribute="top" id="gZl-mO-KGJ"/>
                             <constraint firstItem="11k-Mp-3gS" firstAttribute="trailing" secondItem="BmA-am-1cH" secondAttribute="trailing" id="nvh-co-uNA"/>
                             <constraint firstAttribute="trailing" secondItem="11k-Mp-3gS" secondAttribute="trailing" id="pFj-rF-SLj"/>
@@ -862,7 +862,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r61-kN-JwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="679" y="2922"/>
+            <point key="canvasLocation" x="491" y="2663"/>
         </scene>
         <!--More-->
         <scene sceneID="4DZ-Kx-cI5">
@@ -881,10 +881,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hpe-6j-5IA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1030" y="2907"/>
+            <point key="canvasLocation" x="-1058" y="2663"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Star" width="32" height="32"/>
         <image name="about" width="1024" height="1024"/>
         <image name="bad" width="64" height="64"/>
         <image name="bourkestreetbakery" width="640" height="640"/>
@@ -893,7 +894,6 @@
         <image name="feed_tabicon" width="32" height="32"/>
         <image name="good" width="64" height="64"/>
         <image name="great" width="64" height="64"/>
-        <image name="message" width="64" height="64"/>
         <image name="more" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>

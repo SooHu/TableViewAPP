@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PageViewController : UIPageViewController
+@interface PageViewController : UIPageViewController <UIPageViewControllerDataSource>
+@property (nonatomic)UIPageViewController *pageViewController;
 @property (nonatomic)NSArray *pageHeadings;
 @property (nonatomic)NSArray *pageImages;
 @property (nonatomic)NSArray *pageSubHeadings;

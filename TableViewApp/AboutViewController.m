@@ -10,7 +10,6 @@
 #import "WebViewController.h"
 @interface AboutViewController ()
 @property (nonatomic)NSURLSession *session;
-@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
 @end
 
 @implementation AboutViewController
@@ -23,7 +22,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 
 - (IBAction)contactMe:(id)sender
